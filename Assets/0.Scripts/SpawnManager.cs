@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    
+
     public GameObject[] animalPrefabs;
 
     public GameObject panelGameOver;
@@ -14,9 +14,20 @@ public class SpawnManager : MonoBehaviour
     float zSpawnPos = 20f;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
+
+    private void OnEnable()
+    {
+        DestroyOutOfBounds.OnGameOver += DisplayGameOver;
+    }
+
+    private void OnDisable()
+    {
+        DestroyOutOfBounds.OnGameOver -= DisplayGameOver;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        //DestroyOutOfBounds.OnGameOver.AddListener(DisplayGameOver);
         panelGameOver.SetActive(false);
         InvokeRepeating(nameof(SpawnRandomAnimal), startDelay, spawnInterval);
     }
