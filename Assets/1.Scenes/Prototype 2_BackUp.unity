@@ -572,7 +572,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -7}
-  m_SizeDelta: {x: 530.17, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587719310
 MonoBehaviour:
@@ -753,7 +753,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 530.17, y: 50}
+  m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958646618
 MonoBehaviour:
@@ -917,7 +917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1013073675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2117116966}
   - component: {fileID: 2117116965}
-  - component: {fileID: 2117116967}
   m_Layer: 0
   m_Name: '[ Spawn Manager ]'
   m_TagString: GameController
@@ -1305,21 +1304,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2117116967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117116964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pooledObjects: []
-  objectToPool: {fileID: 9192285804076981851, guid: 0378428db3e2b714db837fc39ac5cb7c, type: 3}
-  amountToPool: 20
 --- !u!1 &5995444759311746739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2510,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5995444759311869483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Script: {fileID: 11500000, guid: f8767ddcdb5f86e439e7786403cb03b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  xRange: 10
+  horizontalInput: 0
+  speed: 10
+  projectilePrefab: {fileID: 9192285804076981851, guid: 0378428db3e2b714db837fc39ac5cb7c, type: 3}

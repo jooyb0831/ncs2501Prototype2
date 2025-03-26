@@ -235,9 +235,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6158330471536868316}
-  - component: {fileID: -2966117587347721770}
   - component: {fileID: 6158330471536868319}
-  - component: {fileID: 3653539450434408605}
+  - component: {fileID: 6607724944575129842}
+  - component: {fileID: 7688717452581502197}
   - component: {fileID: 6158330471546552528}
   - component: {fileID: -1155703032316848978}
   - component: {fileID: 8213108656202867316}
@@ -264,18 +264,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &-2966117587347721770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6158330471536971248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42ef6b9c7d7e9e44b6103fc4312c772, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6158330471536868319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &3653539450434408605
+--- !u!114 &6607724944575129842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,7 +286,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6158330471536971248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bac4a74638bbc4eaaf3a1f03a1035f, type: 3}
+  m_Script: {fileID: 11500000, guid: 81e62e9a8a22fac478a927ce940e28f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7688717452581502197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6158330471536971248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c52ee72091692143869a36cdefe1fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &6158330471546552528
